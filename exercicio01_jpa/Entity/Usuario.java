@@ -1,6 +1,7 @@
 package com.example.exercicio01_jpa.Entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,6 +15,7 @@ import org.hibernate.annotations.ManyToAny;
 @Entity
 
 public class Usuario {
+    @Id
     private Long id;
     private String nome;
 
